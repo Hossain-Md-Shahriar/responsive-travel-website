@@ -193,6 +193,103 @@ select {
     width: 100%;
 }
 
+/* ========== Destination section ========== */
+.destination {
+    margin-block: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.destination-title {
+    font-size: 40px;
+    font-weight: 800;
+    color: #131318;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.destination-description {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    max-width: 643px;
+    margin-bottom: 3rem;
+}
+
+.destination-img-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.destination-img {
+    height: 300px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 800;
+    color: white;
+}
+
+.maldives {
+    width: 573px;
+    background: url(../Images/Rectangle\ 5.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.indonesia {
+    width: 573px;
+    background: url(../Images/Rectangle\ 8.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.srilanka {
+    width: 374px;
+    background: url(../Images/Rectangle\ 6.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.north-america {
+    width: 474px;
+    background: url(../Images/Rectangle\ 7.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.kashmir {
+    width: 274px;
+    background: url(../Images/Rectangle\ 9.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bangladesh {
+    width: 473px;
+    background: url(../Images/Rectangle\ 11.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bandarban {
+    width: 673px;
+    background: url(../Images/Rectangle\ 10.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
 
 
 /* ========== Media Query ========== */
@@ -205,6 +302,7 @@ select {
         gap: 40px;
     }
 }
+
 
 @media screen and (max-width: 990px) {
     .container {
@@ -256,7 +354,13 @@ select {
     .hamburger {
         display: block;
     }
+
+    .destination-img {
+        width: 430px;
+        height: 220px;
+    }
 }
+
 
 @media screen and (max-width: 600px) {
     nav {
@@ -293,5 +397,22 @@ select {
     }
     .popular-img {
         max-width: 335px;
+    }
+
+    .destination {
+        margin-block: 24px;
+    }
+    .destination-title {
+        font-size: 20px;
+        margin-bottom: 1rem;
+    }
+    .destination-description {
+        margin-bottom: 1rem;
+    }
+    .destination-img {
+        width: 335px;
+        height: 176px;
+        font-size: 20px;
+        font-weight: 700;
     }
 }
