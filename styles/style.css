@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Mulish:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ========== NavBar ========== */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 146px;
+    padding-inline: 30px;
+}
+
+.nav-logo {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-title {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #131318;
+}
+
+.nav-title span {
+    color: #FF5400;
+}
+
+.nav-list {
+    display: flex;
+    gap: 2.27rem;
+    list-style: none;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #424247;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.nav-list .home-color {
+    color: #FF5400;
+    font-weight: 700;
+}
+
+.hamburger {
+    display: none;
+}
+
+
+
+
+/* ========== Media Query ========== */
+@media screen and (max-width: 768px) {
+    nav {
+        height: 100px;
+    }
+    .nav-list {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+}
