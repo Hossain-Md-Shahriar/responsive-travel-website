@@ -447,6 +447,73 @@ select {
     text-align: center;
 }
 
+/* ========== Footer ========== */
+footer {
+    height: 502px;
+    background: rgba(19, 19, 24, 0.05);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.footer-logo {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.footer-title {
+    color: #131318;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.footer-title span {
+    color: #FF5400;
+}
+
+.footer-img {
+    height: 32.7px;
+}
+
+.footer-img img {
+    width: 40px;
+}
+
+.footer-description {
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    max-width: 769px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding-block: 32px 50px;
+    width: 872px;
+    border-bottom: 1px solid rgba(19, 19, 24, 0.10);
+}
+
+
+.rights {
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    color: #131318;
+    font-weight: 300;
+    padding-top: 50px;
+    text-align: center;
+}
+
 
 /* ========== Media Query ========== */
 @media screen and (max-width: 1230px) {
@@ -523,6 +590,10 @@ select {
     .newsletter-promo-subtitle {
         font-size: 24px;
     }
+
+    .social {
+        width: 740px;
+    }
 }
 
 
@@ -576,6 +647,10 @@ select {
         grid-template-columns: 474px;
         grid-template-rows: repeat(2, 422px);
         justify-content: center;
+    }
+
+    .social {
+        width: 550px;
     }
 }
 
@@ -719,5 +794,33 @@ select {
     }
     .newsletter-promo-subtitle {
         font-size: 20px;
+    }
+
+    footer {
+        height: 309px;
+    }
+    .footer-logo {
+        gap: 10px;
+    }
+    .footer-title {
+        font-size: 21px;
+    }
+    .footer-img img{
+        width: 28px;
+    }
+    .footer-img {
+        height: 27px;
+    }
+    .footer-description {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .social {
+        width: 315px;
+        padding-block: 1rem 1.5rem;
+    }
+    .rights {
+        padding-top: 1.5rem;
+        font-size: 14px;
     }
 }
