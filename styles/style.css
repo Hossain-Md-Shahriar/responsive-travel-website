@@ -299,6 +299,7 @@ select {
     border-radius: 1rem;
     height: 474px;
     box-shadow: 0px 0px 25px -4px rgba(0, 0, 0, 0.10);
+    border: 1px solid rgba(255, 85, 0, 0.482);
 }
 
 .hotel-card-img {
